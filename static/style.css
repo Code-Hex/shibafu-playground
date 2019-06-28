@@ -47,7 +47,18 @@ a {
 	font-family: Menlo, monospace;
 	font-size: 11pt;
 }
-
+input[type=button]
+{
+	height: 30px;
+	border: 1px solid green;
+	font-size: 16px;
+	font-family: sans-serif;
+	background: green;
+	color: white;
+	position: static;
+	top: 1px;
+	border-radius: 5px;
+}
 #code {
 	color: green;
 	background: greenyellow;
