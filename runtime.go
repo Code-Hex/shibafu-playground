@@ -27,9 +27,6 @@ func (s *server) runtimeHandler() http.HandlerFunc {
 		}
 
 		body := r.FormValue("body")
-		version := r.FormValue("version")
-
-		s.log.Printf("version: %s, src: `%s`", version, body)
 
 		ctx, cancel := context.WithTimeout(r.Context(), 3*time.Second)
 		defer cancel()

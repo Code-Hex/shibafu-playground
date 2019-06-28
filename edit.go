@@ -72,7 +72,11 @@ func (s *server) editHandler() http.HandlerFunc {
 	}
 }
 
-const hello = `wwwwWwwWwwWwwWwwWwwWwwWwwWwwWw
+const hello = `
+  　    ∧,,∧
+　　　 (；｀・ω・）　　,
+　　　 /　ｏ={=}ｏ , ', ´
+,,,,,しー-Ｊミ(.@)wwwwWwwWwwWwwWwwWwwWwwWwwWwwWw
 wWWWWWwWwwWwwWwwWwwWwwWwwWwwWwwwwWwWWWw
 WWWWwwwwwwWwwWwwWwwWwwWwwWwwWw
 wWWWWWwWwwWwwWwwWwwwwWwWWWw
