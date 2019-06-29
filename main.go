@@ -41,7 +41,9 @@ func run() error {
 
 func projectID() string {
 	id, err := metadata.ProjectID()
-	log.Errorf("Could not determine the project ID: %v", err)
+	if err != nil {
+		log.Errorf("Could not determine the project ID: %v", err)
+	}
 	return id
 }
 

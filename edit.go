@@ -9,8 +9,6 @@ import (
 	"cloud.google.com/go/datastore"
 )
 
-const hostname = "play.shibafu.dev"
-
 var editTemplate = template.Must(template.ParseFiles("edit.html"))
 
 type editData struct {
