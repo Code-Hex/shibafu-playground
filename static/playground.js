@@ -70,12 +70,7 @@ function HTTPTransport() {
 					if (!data) return;
           if (playing != null) playing.Stop();
           if (data.Errors) {
-						if (data.Errors === 'process took too long') {
-							// Playback the output that was captured before the timeout.
-							playing = playback(output, data);
-						} else {
-							runFailed(output, data.Errors);
-						}
+						runFailed(output, data.Errors);
 						return;
 					}
 
