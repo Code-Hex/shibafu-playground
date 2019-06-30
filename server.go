@@ -71,6 +71,12 @@ func (s *server) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	if r.Header.Get("X-Forwarded-Proto") == "https" {
 		w.Header().Set("Strict-Transport-Security", "max-age=31536000; preload")
 	}
-	s.log.Printf("request path: %s", r.URL.Path)
+
+	switch path := r.URL.Path; path {
+	case "/_ah/health":
+	case "/favicon.ico":
+	default:
+		s.log.Printf("request path: %s", path)
+	}
 	s.mux.ServeHTTP(w, r)
 }

@@ -134,7 +134,7 @@ function PlaygroundOutput(el) {
 
 (function() {
   function lineHighlight(error) {
-    var regex = /prog.go:([0-9]+)/g;
+    var regex = /compile:([0-9]+)/g;
     var r = regex.exec(error);
     while (r) {
       $(".lines div").eq(r[1]-1).addClass("lineerror");
