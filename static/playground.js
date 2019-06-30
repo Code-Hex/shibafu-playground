@@ -164,7 +164,6 @@ function PlaygroundOutput(el) {
   //  enableHistory - enable using HTML5 history API (optional)
   //  transport - playground transport to use (default is HTTPTransport)
   //  enableShortcuts - whether to enable shortcuts (Ctrl+S/Cmd+S to save) (default is false)
-  //  enableVet - enable running vet and displaying its errors
   function playground(opts) {
     var code = $(opts.codeEl);
     var transport = opts['transport'] || new HTTPTransport(opts['enableVet']);
